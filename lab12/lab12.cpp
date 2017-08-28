@@ -1,4 +1,9 @@
+/*
+Created by: Michael Silva 
+Created on: 8/28/2017
+Description: ASCII Art Lab
 
+*/
 
 #include <iostream>
 using namespace std;
