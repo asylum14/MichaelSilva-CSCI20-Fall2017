@@ -15,7 +15,6 @@ Step 5 if the number is higher than the random number eliminate all numbers high
 
 
 
-
 */
 =======
 /*

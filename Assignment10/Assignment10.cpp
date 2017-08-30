@@ -9,11 +9,11 @@ jet with a given velocity and distance to lift off the ground.
 using namespace std;
 
 int main(){
-    float velocity;
-    float velocityConverted;
-    float distance;
-    float acceleration;
-    float t;  //t = time
+    double velocity=0;
+    double velocity_converted=0;
+    double distance=0;
+    double acceleration=0;
+    double t=0;  //t = time
     
     cout<< "at what velocity is the Jet currently at (in km/hr)?"<<endl;
     cin>>velocity;
@@ -38,8 +38,6 @@ int main(){
         which looks like a=(v^2)/(2s).
     */
     
-    
-    cout<<"it takes "<<t<<" seconds to take off at a rate of "<<acceleration<<" meters per second^2"<<endl;
-    return 0;
+    cout<<"if the Velocity is "<<velocity<< " km/hr and the distance is "<<distance<<" meters"<<endl;
+    cout<<"The Jet would take "<<t<<" seconds to take off at a rate of "<<acceleration<<" meters per second^2"<<endl;
 }
-
