@@ -10,12 +10,11 @@ using namespace std;
 
 int main(){
     int  t=0;
-    
+    int  population=325762730;
     cout<<"How Much time has passed in years?"<<endl;
     cin>>t; //t=time
     int  year= t+2017;
-    t=t*365*24*60; //convert years to minutes, because converting to seconds make the number too masive for the computer to handle
-    int  population=325762730;
+    t=t*365*24*60; //convert years to minutes, because converting to seconds makes the number too masive for the computer to handle without using long variables
     int  population_growth=(t/12)*60; //net growth is equal to aproximatly 1 person added to the population every 12 seconds, Multiplied by 60 to compensate for not converting t to seconds
     
     
