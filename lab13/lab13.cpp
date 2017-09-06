@@ -1,7 +1,8 @@
 /*
 Created by: Michael Silva 
 Created on: 8/28/2017
-Description: Population Clock lab
+Description: Population Clock lab. This lab is designed to teach us about 
+integers and how they can be manipulated.
 
 */
 
@@ -20,7 +21,16 @@ int main(){
     
     population = population + population_growth;
     
-    cout<<"the current population of the United States is 325762730 people"<<endl;
+    cout<<"The current population of the United States is 325762730 people"<<endl;
     cout<<"The predicted population of the United States in " << year<<" is "<<population<<endl;
     cout<<"The population growth is "<<population_growth<<endl;
 }
+/*
+1. output:How Much time has passed in years?
+2. input:99
+3. output:
+The current population of the United States is 325762730 people
+The predicted population of the United States in 2116 is 585934730
+The population growth is 260172000
+
+*/
