@@ -1,3 +1,9 @@
+/*
+Created by: Michael Silva 
+Created on: 9/11/2017
+Description: Mad lib Lab. This lab is designed to introduce string variables.
+
+*/
 #include<iostream>
 #include<string>
 using namespace std;
@@ -27,6 +33,15 @@ int main(){
     cout<<"When I got "<<endl<<"home I "<<past_tense_verb2<<" my mom for a "<<adjective4; 
     cout<<"day at the zoo."; 
 }
-/*
-
+/*Output
+Today I went to the zoo. I saw a(n)
+Large Lion jumping upand down in its tree. 
+He Ran quicklythrough the large tunnel that
+led to its short Dog. I got some peanuts and
+passed them through the cage to a gigantic gray 
+Monkey towering above my head. Feeding that
+animal made me hungry.I went to get a Crazy scoop
+of ice cream. It filled my stomach. Afterwards I 
+had to jump quietly to catch our bus. When I got 
+home I threw my mom for a luckyday at the zoo.
 */
