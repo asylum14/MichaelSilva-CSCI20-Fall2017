@@ -25,6 +25,8 @@ int main(){
     cout<<"I went to get a "<<adjective3<<" scoop"<<endl<<"of ice cream. It filled my stomach.";
     cout<<" Afterwards I "<<endl<<"had to "<<verb1<<" "<<adverb2<<" to catch our bus. ";
     cout<<"When I got "<<endl<<"home I "<<past_tense_verb2<<" my mom for a "<<adjective4; 
-    cout<<"day at the zoo."<<endl; 
-    
+    cout<<"day at the zoo."; 
 }
+/*
+
+*/
