@@ -44,4 +44,8 @@ animal made me hungry.I went to get a Crazy scoop
 of ice cream. It filled my stomach. Afterwards I 
 had to jump quietly to catch our bus. When I got 
 home I threw my mom for a luckyday at the zoo.
+<<<<<<< HEAD
 */
+=======
+*/
+>>>>>>> 7a52b0d087d5b513d3f39e0e7e29cc8eeae69ff4
