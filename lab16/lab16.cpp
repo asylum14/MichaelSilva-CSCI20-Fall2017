@@ -86,16 +86,21 @@ return 0;
      
 }
 /*
+input: Nin, T,15,100
+
+
 Stock Name        No. of Shares         Current Value          Total Value
+
 FordM             87                    18.76                  1632.12
 albertsn          542                   34.39                  18639.4
 AAPL              5                     145.91                 729.55
 TSLA              50                    375.64                 18782
 WFC               1368                  53.02                  72531.4
 microsoft         100                    75.1                  7510
+nin               100                    15                    1500
 
 
-Total Portfolio value: 119824
+Total Portfolio value: 121324
 
 
 */
