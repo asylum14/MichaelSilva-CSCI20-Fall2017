@@ -33,3 +33,32 @@ int main(){
    
     
 }
+/*input:30,4
+output:
+What is the tempeture?
+30
+How fast is the wind?
+4
+Wind Speed       Tempeture                Old Wind Chill Formula       New Wind Chill Formula       difference
+4                30                       30.5753                       25.767                       -4.8083
+
+input:39.25,10
+output:
+What is the tempeture?
+39.25
+How fast is the wind?
+10
+Wind Speed       Tempeture                Old Wind Chill Formula       New Wind Chill Formula       difference
+10                39.25                       27.8601                       32.713                       4.85286
+
+input:100,2
+output:
+What is the tempeture?
+100
+How fast is the wind?
+2
+Wind Speed       Tempeture                Old Wind Chill Formula       New Wind Chill Formula       difference
+2                100                       98.7538                       105.711                       6.95719
+
+
+*/
