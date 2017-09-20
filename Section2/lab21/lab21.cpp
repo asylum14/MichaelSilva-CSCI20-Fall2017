@@ -30,8 +30,6 @@ int main(){
     
     cout<<"Wind Speed       "<<"Tempeture                "<<"Old Wind Chill Formula       "<<"New Wind Chill Formula"<<"       difference"<<endl;
     cout<<velocity<<"                "<<tempeture<<"                       "<<old_wind_chill<<"                       "<<new_wind_chill<<"                       "<<difference<<endl;
-   cout<<35.74+0.6215*tempeture-35.75<<endl;
-   cout<<velocity_power_constant+0.4275<<endl;
-    cout<<tempeture*velocity_power_constant<<endl;
+   
     
 }
