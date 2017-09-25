@@ -7,11 +7,16 @@ Description:this program is designed to create a function that generates a "rand
 #include<cmath>
 
 using namespace std;
-
-int main(){
-   double  randomNumberGet{
-            // double guess=(rand()%100)+1;
-            return (rand()%100)+1;
-            }
-    cout<<randomNumberGet()<<endl;    
+void RandomNumberGet(){
+     srand (time(NULL));//start the random generator
+   int rand_num=(rand()%100)+1;
+    cout<<rand_num<<endl;
 }
+int main(){
+    RandomNumberGet();
+}
+/*
+run 1:96
+run 2:7
+run 3:90
+*/
