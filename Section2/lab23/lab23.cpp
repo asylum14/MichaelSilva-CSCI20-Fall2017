@@ -11,12 +11,10 @@ using namespace std;
 void SwapNumbers(int& number1, int& number2){  
     int tempNum2;
     int tempNum1;
-    cout<<"The numbers passed were "<<number1<<" and "<<number2<<" in that order"<<endl;
     tempNum2=number1;
     tempNum1=number2;
     number1=tempNum1;
     number2=tempNum2;
-    cout<<"The numbers swapped are now "<<number1<<" and "<<number2<<" in that order"<<endl;
     return;
 }
 int RandomNumberGet(int numMin,int numMax){
@@ -32,6 +30,21 @@ int main(){
     cin>>userMin;
     cout<<"please enter the Maximum value"<<endl;
     cin>>userMax;
-    cout<<RandomNumberGet(userMax,userMin)<<endl;
+    cout<<"Number between 1 and 10 "<<RandomNumberGet(1,10)<<endl;
+    cout<<"Number between 5 and 82 "<<RandomNumberGet(5,82)<<endl;
+    cout<<"Number between 22 and 73 "<<RandomNumberGet(22,73)<<endl;
+    cout<<"Number between two user inputs "<<RandomNumberGet(userMax,userMin)<<endl;
 
 }
+/*
+*******FIXME NUMBERS LARGER THAN THEY SHOULD BE
+please enter the minimum value
+14
+please enter the Maximum value
+16
+Number between 1 and 10 16
+Number between 5 and 82 103
+Number between 22 and 73 97
+Number between two user inputs 15
+
+*/
