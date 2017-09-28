@@ -20,7 +20,7 @@ void SwapNumbers(int& number1, int& number2){
 int RandomNumberGet(int numMin,int numMax){
     SwapNumbers(numMax,numMin);
     srand(time(NULL));
-    return ((rand()%(numMax-numMin))+numMin+1);
+    return ((rand()%(numMax-numMin))+numMin);
 }
 
 int main(){
@@ -30,10 +30,10 @@ int main(){
     cin>>userMin;
     cout<<"please enter the Maximum value"<<endl;
     cin>>userMax;
-    cout<<"Number between 1 and 10 "<<RandomNumberGet(1,10)<<endl;
-    cout<<"Number between 5 and 82 "<<RandomNumberGet(5,82)<<endl;
-    cout<<"Number between 22 and 73 "<<RandomNumberGet(22,73)<<endl;
-    cout<<"Number between two user inputs "<<RandomNumberGet(userMax,userMin)<<endl;
+    cout<<"Number between 1 and 10 "<<RandomNumberGet(10,1)<<endl;
+    cout<<"Number between 5 and 82 "<<RandomNumberGet(82,5)<<endl;
+    cout<<"Number between 22 and 73 "<<RandomNumberGet(73,22)<<endl;
+    cout<<"Number between the two user inputs "<<RandomNumberGet(userMax,userMin)<<endl;
 
 }
 /*
