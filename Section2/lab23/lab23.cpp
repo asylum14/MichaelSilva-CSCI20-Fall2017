@@ -37,14 +37,14 @@ int main(){
 
 }
 /*
-*******FIXME NUMBERS LARGER THAN THEY SHOULD BE
+
 please enter the minimum value
-14
+5
 please enter the Maximum value
-16
-Number between 1 and 10 16
-Number between 5 and 82 103
-Number between 22 and 73 97
-Number between two user inputs 15
+7
+Number between 1 and 10 7
+Number between 5 and 82 48
+Number between 22 and 73 55
+Number between the two user inputs 6
 
 */
