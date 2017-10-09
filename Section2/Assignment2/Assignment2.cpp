@@ -21,10 +21,10 @@ class Runners {
     double GetTimeSeconds() const;          //gets Seconds remaining in the minute 
     double GetTimeTotal() const;            // gets total time in seconds
     double GetDistanceMeter() const;        // gets total distance in meters 
-    double GetDistanceFeet() const;         // gets toatl istance in feet 
+    double GetDistanceFeet() const;         // gets total distance in feet 
     double feet_per_second(double distanceFeet,double seconds); //calculates feet per second, using distance in feet and time in seconds
     double meter_per_second(double distanceMeter, double seconds);//calculates meter per second, using distance in meter and time in seconds
-    double quarter_mile_splits(double distanceFeet, double seconds); //calculates the time for each runner's quater mile time
+    double quarter_mile_splits(double distanceFeet, double seconds); //calculates the time for each runner's quater mile time assuming a constant speed
     double winner_time_difference(double winnerTime,double runnerTime);   //calculates the difference between the winner's time and the runner's time
 
     void Print();         //prints all wanted variables
@@ -94,7 +94,7 @@ void Runners::Print(){
     cout<<((((time_minutes_*60)+time_seconds_)-((3*60)+47))/60)<<":"<<(((time_minutes_*60)+time_seconds_)-((3*60)+47))%60<<endl;
     
     cout<<"Quarter Mile Time (In Seconds)"<<endl;       //quarter mile time
-    cout<<(((time_minutes_*60)+time_seconds_)/(60*distance_feet_/1320))<<":"<<(((time_minutes_*60)+time_seconds_)/(distance_feet_/1320)%60)<<endl<<endl;
+    cout<<(((time_minutes_*60)+time_seconds_)/(60*distance_feet_/(5280/4)))<<":"<<(((time_minutes_*60)+time_seconds_)/(distance_feet_/(5280/4))%60)<<endl<<endl;
    
 }
 int main(){
