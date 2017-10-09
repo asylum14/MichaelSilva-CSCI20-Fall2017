@@ -98,7 +98,7 @@ void Runners::Print(){
    
 }
 int main(){
-    double distance =5000; //distance in meters 
+    int distance =5000; //distance in meters 
     
     Runners runnerA;
     Runners runnerB;
