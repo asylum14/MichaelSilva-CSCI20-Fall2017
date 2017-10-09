@@ -32,6 +32,7 @@ double PoundsToKilograms(double pounds){
     double kilograms= pounds*(1/2.2);
     return kilograms;
 }
+//Kilograms to pound Input: 
 double KilogramsToPounds(double kilograms){
     double pounds= kilograms*2.2;
     return pounds;
