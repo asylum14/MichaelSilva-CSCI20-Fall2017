@@ -17,11 +17,13 @@ class Runners {
     public:
     void SetTime(double minutes,double seconds);  //sets time, requires an doubleeger 
     void SetDistance(double distanceMeter); //sets distance, requires distance in meters
+    
     double GetTimeMinutes() const;        //gets time in minutes
     double GetTimeSeconds() const;          //gets Seconds remaining in the minute 
     double GetTimeTotal() const;            // gets total time in seconds
     double GetDistanceMeter() const;        // gets total distance in meters 
     double GetDistanceFeet() const;         // gets total distance in feet 
+    
     double feet_per_second(double distanceFeet,double seconds); //calculates feet per second, using distance in feet and time in seconds
     double meter_per_second(double distanceMeter, double seconds);//calculates meter per second, using distance in meter and time in seconds
     double quarter_mile_splits(double distanceFeet, double seconds); //calculates the time for each runner's quater mile time assuming a constant speed
