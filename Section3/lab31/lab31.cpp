@@ -230,3 +230,34 @@ int main(){
     
     
 }
+/*
+User A:
+ATT Unlimited Choice Plan: 115
+ATT Unlimited Plus Plan: 145
+ATT Family Plan: 100
+Verizon Unlimited Plan: 150
+Sprint Unlimted Plan:100
+Sprint Two GB Plan:0
+
+User B:
+ATT Unlimited Choice Plan: 145
+ATT Unlimited Plus Plan: 175
+ATT Family Plan: 160
+Verizon Unlimited Plan: 180
+Sprint Unlimted Plan: 130
+Sprint Two GB Plan: 0
+
+User C:
+ATT Unlimited Choice Plan: 60
+ATT Unlimited Plus Plan: 90
+ATT Family Plan: 50
+Verizon Unlimited Plan: 20
+Sprint Unlimted Plan: 60
+Sprint Two GB Plan: 40
+
+Lowest plans
+User A: 100
+User B: 130
+User C: 20
+
+*/
