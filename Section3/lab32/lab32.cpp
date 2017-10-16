@@ -101,10 +101,28 @@ int main(){
 }
 
 /*
+Name: Joe Vandal
+Marriage Status: Single
+Annual Wage: 12100
+Tax Deduction: 250
+Tax Owed: 1098
 
+Name: Alfonso Haynes
+Marriage Status: Married
+Annual Wage: 32351
+Tax Deduction: 3192
+Tax Owed: 728
 
+Name: Bridget Rowe
+Marriage Status: Single
+Annual Wage: 88229
+Tax Deduction: 12057
+Tax Owed: 5739
 
-
-
+Name: Wendy Joesph
+Marriage Status: Married
+Annual Wage: 73291
+Tax Deduction: 6972
+Tax Owed: 3089
 
 */
