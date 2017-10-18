@@ -19,7 +19,7 @@ using namespace std :: chrono; //chrono allows me to use the function seconds
 void Countdown(int amountIntervals, int secondsBetweenNumbers){
     for(int i=amountIntervals; i>0; i--){
             sleep_for(seconds(secondsBetweenNumbers));
-            cout<<i<<endl;
+            cout<<i<<endl<<endl;
            }
 }
 
@@ -49,3 +49,7 @@ int main(){
     }
     
 }
+
+/*
+
+*/
