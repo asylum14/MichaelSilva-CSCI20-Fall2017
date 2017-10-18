@@ -7,6 +7,7 @@ Description: Determine the Tax payment owed for income tax given the person's Ta
 #include <iostream>
 #include <string>
 using namespace std;
+//Class TaxPayers is used to determine variables needed to calculate tax and to calculate the tax.
 class TaxPayers{
     private:
         string name_;
@@ -18,14 +19,27 @@ class TaxPayers{
         int DeterminePayment();
         void Print();
 };
+
+// Set variables is used to set the variables for the class object, 
+// input required (in order): 
+// a string representing the users name, a bool representing if user is married
+// an int representing the annual income of the user, and an int representing the amount the user doesn't have to pay.
+// Output given:
+// None
 void TaxPayers::SetVariables(string name,bool isMarried, int wages,int withheldPayment){
     name_=name;
     isMarried_=isMarried;
     wages_=wages;
     withheldPayment_=withheldPayment;
 }
+// the Determine Payment function is used to calculate the amount of taxes owed by a user
+// input:None* USER MUST SET VARIABLES BEFORE USING THIS FUNCTION
+// output:
+// this user returns an int that represents the amount owed in taxes.
 int TaxPayers::DeterminePayment(){
     int payment=0;
+    // this switch case is used to determine whether or not the user is married, as they will 
+    // owe different amounts if they are.
     switch(isMarried_){
         case true:
                   if(wages_<=18650){
@@ -65,8 +79,12 @@ int TaxPayers::DeterminePayment(){
     }
         return payment;
 }
+// the print function prints out all the variables used in this class
+// input:None* USER MUST SET VARIABLES BEFORE USING THIS FUNCTION
+// output: this function doesn't return anything, however it does use cout to print things to the screen
 void TaxPayers::Print(){
     string marriageOutput; //a variable to output a string whether marriage is true or false
+    /// this switch case is used to output a certain string if the user is married and another if they are single
     switch(isMarried_){
     case true:
     marriageOutput="Married";
