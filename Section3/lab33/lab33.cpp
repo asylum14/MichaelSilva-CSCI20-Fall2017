@@ -51,5 +51,72 @@ int main(){
 }
 
 /*
+Please select a nuber between 1 and 50.
+51
+invalid input please select anumber between 1 and 50
+-1
+invalid input please select anumber between 1 and 50
+0
+invalid input please select anumber between 1 and 50
+25
+5
+
+4
+
+3
+
+2
+
+1
+
+Too small
+37
+5
+
+4
+
+3
+
+2
+
+1
+
+Too small
+43
+5
+
+4
+
+3
+
+2
+
+1
+
+Too large
+40
+5
+
+4
+
+3
+
+2
+
+1
+
+Too small
+42
+5
+
+4
+
+3
+
+2
+
+1
+
+Correct, You Win!
 
 */
