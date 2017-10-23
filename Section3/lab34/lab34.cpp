@@ -12,9 +12,9 @@
      // Sum up grades as we do, and look for minimum        
          
      while (grade != -1) {       
-         cin >> grade;  // ##shouldn't this line be moved in the while loop       
+         cin >> grade;  //##shouldn't this line be moved in the while loop       
          total = total + grade;                
-         count = count+1;      //<-## something wrong here          
+         count = count+1;                
          if (grade < minimum && grade>=0) {//##grade shouldn't be less then zero also                         
              minimum = grade;                
              
