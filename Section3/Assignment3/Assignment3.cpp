@@ -6,8 +6,8 @@ Description:This program is a game of pig played between the player and the comp
 
 #include <iostream>
 #include <string>
-#include<chrono>
-#include<thread>
+#include <chrono>
+#include <thread>
 
 using namespace std;
 using namespace std :: this_thread;//this_thread allows me to use the sleep_for function
@@ -17,8 +17,9 @@ using namespace std :: chrono; //chrono allows me to use the function seconds
 class Player{
     private:
     int totalScore_;
-    public:
     
+    public:
+    //constructor
     Player(){
         totalScore_=0;
     }
@@ -29,11 +30,11 @@ class Player{
         roll=(random()%6)+1;
      return roll;   
     }
-    //returns the players current score
+    //returns the players current score as an integer
     int GetScore(){
         return totalScore_;
     }
-    //adds top the players current score
+    //adds top the players current score, requires an integer argument that represents the score added, returns nothing. 
     void AddScore(int turnScore){
         totalScore_=totalScore_+turnScore;
     }
@@ -44,27 +45,29 @@ class Player{
 
 
 int main(){
-    Player Computer;
-    Player User;
-    //While game is being played;while either players scpre is less then 100, continue code
+    Player Computer; //Computer player
+    Player User; //User player
+    //While game is being played; while either players score is less then 100, continue code
     while(User.GetScore()<100 && Computer.GetScore()<100){
-            int playerDecision; 
+            int playerDecision=0; //used to determine if the player is going to roll or hold 
             int turnScore=0;
-            bool playerTurn =true;
+            bool playerTurn =true; //makes sure to start with the player first
             bool computerTurn=false;
             int roll=0;
             cout<<"Your turn your total score is "<<User.GetScore()<<endl;
             
-            //while it is the players turn
+            //while it is the players turn; i.e. user doesn't roll a 1 and decides to keep going
            while(roll!=1 && (playerTurn==true)){
             cout<<"Current turn Score is "<<turnScore<<" "<<endl;;
             cout<<"Would you like to hold or to roll? press 1 to roll and 0 to hold"<<endl;
+            //playerDecision can only be 0 or 1
             cin>>playerDecision;
             if(playerDecision==1){
                 roll=User.Roll();
                 turnScore=turnScore+roll;
                 cout<<"Player's Roll "<<roll<<endl;
                 
+                //if the player rolls a 1, end turn
                 if(roll==1){
                     turnScore=0;
                     playerTurn=false;
@@ -76,8 +79,10 @@ int main(){
              User.AddScore(turnScore);
              playerTurn=false;
              computerTurn=true;
-            }else{
-                cout<<"ERROR: Invalid Input"<<endl;
+            }
+            // if the user enters something that is not 0 or 1 return an error
+            else{
+                cout<<"ERROR: Invalid input please enter only a 1 or a 0"<<endl;
             }
             
            }
@@ -100,6 +105,7 @@ int main(){
                 turnScore=0;
                 computerTurn=false;
             }
+            //the computer will only keep rolling until his score is higher than 15or if it rolls a 1
             if(turnScore>=15){
                 Computer.AddScore(turnScore);
                 computerTurn=false;
@@ -109,6 +115,8 @@ int main(){
         playerTurn=true;
        
     }
+    
+    //determines who the winner is 
     if (User.GetScore()>100 && Computer.GetScore()<User.GetScore()){
         cout<<"You Win"<<endl;
         cout<<"Player Score: "<<User.GetScore()<<"      "<<"Computer Score: " << Computer.GetScore()<<endl;
