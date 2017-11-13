@@ -1,7 +1,7 @@
 /*
 Created by:Michael Silva
 Created on: 10/23/2017
-Description:
+Description: this program is used to simulate a shopping cart for a store
 */
 
 #include <iostream>
