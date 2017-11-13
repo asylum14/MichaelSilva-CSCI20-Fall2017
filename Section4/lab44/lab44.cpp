@@ -4,7 +4,7 @@ Created on: 10/23/2017
 Description:  This program gives ussername examples given the users first and last names.
 */
 #include <iostream>
-#include <string>
+#include <cstring>
 using namespace std;
 
 int main(){
@@ -35,7 +35,7 @@ int main(){
             }
         }
     }
-    /*
+/*
     Try these usernames:
         MiSilva
         MSilva
@@ -67,9 +67,4 @@ int main(){
         
         your first name and last name are the same. are you sure you That this is correct? Type 0 for no. 1 for yes 
         0
-
-
-    
-    
-    
-    */
+*/
