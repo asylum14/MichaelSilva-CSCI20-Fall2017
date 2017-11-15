@@ -1,70 +1,110 @@
 /*
 Created by:Michael Silva
 Created on: 10/23/2017
-Description:  This program gives ussername examples given the users first and last names.
+Description:  This program gives username examples given the users first and last names.
 */
+
 #include <iostream>
 #include <cstring>
 using namespace std;
 
 int main(){
-    int const USERS=4;
-    bool errorHandleFlag=true;
-   
-  string userFirstNames[USERS]={"Michael","April","AnaElizabeth","James"};
-  string userLastNames[USERS]={"Silva","Browne","Hazeltine-Smith","James"};
+     int const USERS=4;
+     int const FIRSTNAMELIMIT=15;
+     int const LASTNAMELIMIT =20;
+     int count=0;
+     bool errorHandleFlag=true;
+     
+    char firstName[USERS][FIRSTNAMELIMIT]={"Michael","April","AnaElizabeth","James"};
+    char lastName[USERS][LASTNAMELIMIT]={"Silva","Browne","Hazeltine-Smith","James"};
     
-        cout<<"Try these usernames:"<<endl;
-        for(int i =0; i<USERS;i++){
-            if(userFirstNames[i]==userLastNames[i]){
-                cout<<"your first name and last name are the same. are you sure you That this is correct? Type 0 for no. 1 for yes "<<endl;
-                cin>>errorHandleFlag;
+    
+    for(int i =0; i<USERS;i++){
+        cout<<"Try these usernames:"<<endl;    
+        if(strlen(firstName[i])<10){
+            
+            
+                //check to see if the users first name is the same as the last name
+            if(strcmp(firstName[i],lastName[i])==0){
+                    cout<<"your first name and last name are the same. are you sure you That this is correct? Type 0 for no. 1 for yes "<<endl;
+                    cin>>errorHandleFlag;
             }
-            if(userFirstNames[i].length()>10 || userLastNames[i].length()>20){
-                cout<<"This Name is too large"<<endl<<endl;
-            }
-            if(userFirstNames[i].length()<=10 && userLastNames[i].length()<=20){
-                if(errorHandleFlag){
-                  for(int j =0;j<2;j++){
-                       cout<<userFirstNames[i][j];
-                    }
-                        cout<<userLastNames[i]<<endl;
-                        cout<<userFirstNames[i][0]<<userLastNames[i]<<endl;
-                        cout<<userFirstNames[i]<<userLastNames[i]<<endl<<endl;
+                //if the user decides to allow the first and last names to be the same or the name is less than 10 charactrs
+            if(errorHandleFlag){
+                for(int k=0; k<2;k++){
+                    cout<<firstName[i][k];
                 }
+                        
+                for(int l=0; l<LASTNAMELIMIT;l++){
+                    cout<<lastName[i][l];
+                }
+                        
+                cout<<endl;
+                cout<<firstName[i][0];
+                
+                for(int l=0; l<LASTNAMELIMIT;l++){
+                    cout<<lastName[i][l];
+                }
+                        
+                cout<<endl;
+                
+                for(int k=0; k<FIRSTNAMELIMIT; k++){
+                    cout<<firstName[i][k];
+                }
+                        
+                for(int l=0; l<LASTNAMELIMIT;l++){
+                    cout<<lastName[i][l];
+                }
+                
+                cout<<endl<<endl;
             }
-        }
+                        
+        }else{
+            cout<<"Name is too large"<<endl<<endl;
+         }
     }
+}
+
+
 /*
-    Try these usernames:
-        MiSilva
-        MSilva
-        MichaelSilva
-        
-        ApBrowne
-        ABrowne
-        AprilBrowne
-        
-        This Name is too large
-        
-        your first name and last name are the same. are you sure you That this is correct? Type 0 for no. 1 for yes 
-        1
-        JaJames
-        JJames
-        JamesJames
+Try these usernames:
+MiSilva
+MSilva
+MichaelSilva
+
+Try these usernames:
+ApBrowne
+ABrowne
+AprilBrowne
+
+Try these usernames:
+Name is too large
+
+Try these usernames:
+your first name and last name are the same. are you sure you That this is correct? Type 0 for no. 1 for yes 
+1
+JaJames
+JJames
+JamesJames
 
 
-        Try these usernames:
-        MiSilva
-        MSilva
-        MichaelSilva
 
-        ApBrowne
-        ABrowne
-        AprilBrowne
-        
-        This Name is too large
-        
-        your first name and last name are the same. are you sure you That this is correct? Type 0 for no. 1 for yes 
-        0
+Try these usernames:
+MiSilva
+MSilva
+MichaelSilva
+
+Try these usernames:
+ApBrowne
+ABrowne
+AprilBrowne
+
+Try these usernames:
+Name is too large
+
+Try these usernames:
+your first name and last name are the same. are you sure you That this is correct? Type 0 for no. 1 for yes 
+0
+
+
 */
