@@ -104,8 +104,10 @@ int main(){
     fout<<"<h4>"<<"Class Grade Point Average"<<"</h4>"<<"<p>"<<class_grade_point_sum/class_unit_sum<<"</p>"<<endl;
     
     fout<<"</body>"<<endl;
+    
     fin.close();
-   fout.close();
+    fout.close();
+    style.close();
    return 0;
     
 }
