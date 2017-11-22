@@ -30,7 +30,7 @@ int main(){
     ifstream fin;       //represents the input document
     ifstream answers; //represents the answer document
     ofstream fout;      //represents the output document
-    int  NUM_STUDENTS=9;
+    int const NUM_STUDENTS=9;
     int const ASCII_QUESTION_MARK=63;   //ASCII value for a question mark
     int const ASCII_SPACE=32;           //ASCII value for space
     Students classroom[NUM_STUDENTS];
@@ -114,7 +114,7 @@ int main(){
                 fout<<"missed Question: "<<k<<endl;
             }
             //makes sure no person gets a negative score
-        if(classroom[count].Grade<0){
+        if(classroom[count].Grade<0.1){
             classroom[count].Grade=0;
         }
         cout<<"Test Score:"<<classroom[count].Grade<<endl;
