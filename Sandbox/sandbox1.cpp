@@ -2,11 +2,14 @@
 #include <string>
 #include <stdio.h>
 #include <ctype.h>
+#include <cstring>
 using namespace std;
 
 int main() {
- string p="hello";
- if(p.find("no")==0){
-    cout<<"run"<<endl;
- }
+char test="a";
+test="b";
+int length =0;
+
+length= strlen(test);
+
 }
