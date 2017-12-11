@@ -10,10 +10,7 @@ double average(double rating[PLAYERS]);
 double standardDeviation(double rating[PLAYERS],double average);
 double overallStandardDeviation;
 double overallAverage;
-Player players[PLAYERS];
 double teamPerformance[TEAMS];  //This stat is used to try to account for any random unknown variables
 double teamRatingAverage[TEAMS];
 double teamRatingSum[TEAMS];
 double playerRatings[PLAYERS]; 
-ifstream fin;
-ofstream fout;

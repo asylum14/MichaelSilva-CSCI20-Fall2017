@@ -19,12 +19,22 @@ double standardDeviation(double rating[PLAYERS],double average){
     return standardDeviation;
 }
 int main(){
+    Player players[PLAYERS]={};
+    ifstream fin;
+    ofstream fout;
+    string line;   
+    double kills;
+    double deaths;
+    double hours;
+    string team;
+    int j=0;
+    int statIndex=0;
     srand (time(0));
-   fin.open("input.txt");
-   fout.open("output.txt");
+    fin.open("input.txt");
+    fout.open("output.txt");
     int teamGamesWon[TEAMS]={0,0};
     while(teamGamesWon[0]<3 && teamGamesWon[1]<3){
-    Player players[PLAYERS]={
+   Player players[PLAYERS]={
                             Player(163,15,189,"Team1"),
                             Player(233,557,85,"Team1"),
                             Player(124,9,87,"Team1"),
@@ -37,10 +47,33 @@ int main(){
                             Player(206,191,70,"Team2")
         
     };
+   /*while(!fin.eof()){
+       
+       getline(fin,line);
+       if(statIndex%4==0){
+           kills=0;
+       }
+       if(statIndex%4==1){
+           deaths=0;
+       }
+       if(statIndex%4==2){
+           hours=0;
+       }
+       if(statIndex%4==3){
+           team=line;
+           players[j]=Player(kills,deaths,hours,team);
+            j++;
+            kills=0;
+            deaths=0;
+            hours=0;
+            team =" ";
+       }
+        
+       statIndex++;
+   }*/
    
-    
     for(int i=0;i<PLAYERS;i++){
-       playerRatings[i]=players[i].GetScore();
+       playerRatings[i]=players[i].GetScore();  //collects the players scores to be averaged
     }
      overallAverage=average(playerRatings);
      overallStandardDeviation=standardDeviation(playerRatings,overallAverage);

@@ -1,8 +1,10 @@
-Team 1: 73.0653 Team 2: 77.4797
+Team 1: 73.0653 Team 2: 81.5576
 Team 2 Wins
-Team 1: 141.417 Team 2: 153.328
+Team 1: 158.701 Team 2: 176.164
 Team 2 Wins
-Team 1: 252.193 Team 2: 259.353
+Team 1: 230.981 Team 2: 225.099
+Team 1 Wins
+Team 1: 326.83 Team 2: 355.591
 Team 2 Wins
 
-Team 2 Wins 3-0
+Team 2 Wins 3-1
